@@ -8,7 +8,7 @@
 2. Ollama: ollama_linux_amd64.tar.gz (100MB)
 3. Ollama 모델:
    - gemma3-27b-q4_0.gguf 
-   - gpt-oss 20B.gguf (지금 pc에 있는 거 그대로)
+   - gpt-oss 20B.gguf (걍 새로 받기)
    - wazuh-llama-3.1-8B-v1
    - nomic-embed-text.gguf (300MB)
 4. Onyx Docker: onyx.tar (2GB)
@@ -49,6 +49,7 @@
 ------------------------------------------------------------------
 <구성>
 ollama에 수동으로 모델 추가 -> onyx(rag 기능) 연동 -> openwebui(자체 기본 임베딩 기능 제공)로 GUI 환경 제공
+
 
 
 
