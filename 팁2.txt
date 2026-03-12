@@ -1,0 +1,50 @@
+# 윈도우 기반
+1. onyx 윈도우 파일
+
+
+#리눅스 기반
+1. Ubuntu ISO: ubuntu-24.04-desktop-amd64.iso (5GB)
+2. Ollama: ollama_linux_amd64.tar.gz (100MB)
+3. Ollama 모델:
+   - gemma3-27b-q4_0.gguf 
+   - gpt-oss 20B.gguf (지금 pc에 있는 거 그대로)
+   - wazuh-llama-3.1-8B-v1
+   - nomic-embed-text.gguf (300MB)
+4. Onyx Docker: onyx.tar (2GB)
+5. Obsidian AppImage: Obsidian-1.6.7.AppImage (200MB)
+6. Open web UI
+7. Docker 패키지: docker-*.deb (200MB)
+   (https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/ 다운로드 -> 압축)
+  -  1. containerd.io_1.6.33-1_amd64.deb     (50MB)  - 컨테이너 런타임
+  - 2. docker-ce_27.3.1-1~ubuntu.24.04.deb (20MB)  - Docker 데몬 (dockerd)
+  - 3. docker-ce-cli_27.3.1-1~ubuntu.24.04.deb (15MB) - docker 명령어
+  - 4. docker-buildx-plugin_0.17.1.deb     (20MB)  - 멀티플랫폼 빌드
+  - 5. docker-compose-plugin_2.29.2.deb    (40MB)  - docker compose
+  - 6. docker-ce-rootless-extras_27.3.1.deb (5MB)   - 루트리스 모드
+  -----------------------------------------------------------------------------
+  # USB에서 압축 해제 
+    tar -xzf docker-noble.tar.gz
+
+   # 순서대로 설치 (의존성 해결)
+     sudo dpkg -i containerd.io_*.deb
+     sudo dpkg -i docker-ce_*.deb docker-ce-cli_*.deb
+     sudo dpkg -i docker-buildx-plugin_*.deb docker-compose-plugin_*.deb
+   
+   # 서비스 시작
+    sudo systemctl enable --now docker
+    sudo usermod -aG docker $USER
+
+
+7. cuda 드라이버(nvidia 홈페이지)
+8. python 3
+
+#공통
+- python lib(파이썬 설치환경에 맞춰야 함)
+  + koreanize matplot
+  + pytorch
+  + tensorflow
+
+
+
+
+
