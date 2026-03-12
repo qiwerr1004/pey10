@@ -44,10 +44,12 @@
   + koreanize matplot
   + pytorch
   + tensorflow
+  + ollama
 
 ------------------------------------------------------------------
 <구성>
 ollama에 수동으로 모델 추가 -> onyx(rag 기능) 연동 -> openwebui(자체 기본 임베딩 기능 제공)로 GUI 환경 제공
+
 
 
 
