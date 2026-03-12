@@ -1,5 +1,6 @@
 # 윈도우 기반
 1. onyx 윈도우 파일
+2. ollama 최신버전(기 설치버전 문제있음)
 
 
 #리눅스 기반
@@ -36,13 +37,18 @@
 
 
 7. cuda 드라이버(nvidia 홈페이지)
-8. python 3
+8. python 3.11.7
 
 #공통
 - python lib(파이썬 설치환경에 맞춰야 함)
   + koreanize matplot
   + pytorch
   + tensorflow
+
+------------------------------------------------------------------
+<구성>
+ollama에 수동으로 모델 추가 -> onyx(rag 기능) 연동 -> openwebui(자체 기본 임베딩 기능 제공)로 GUI 환경 제공
+
 
 
 
